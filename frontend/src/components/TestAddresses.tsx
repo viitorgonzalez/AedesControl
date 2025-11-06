@@ -15,12 +15,12 @@ export default function TestAddresses() {
     setError(null)
 
     try {
-      console.log('🚀 Fazendo requisição para: http://localhost:8080/addresses')
+      console.log('Fazendo requisição para: http://localhost:8080/addresses')
       const data = await addressService.getAll()
       setAddresses(data)
-      console.log('✅ Endereços carregados:', data)
+      console.log('Endereços carregados:', data)
     } catch (err: any) {
-      console.error('❌ Erro detalhado:', {
+      console.error('Erro detalhado:', {
         message: err.message,
         status: err.response?.status,
         statusText: err.response?.statusText,

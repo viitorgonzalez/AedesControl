@@ -29,6 +29,14 @@ public class User {
     @Column(nullable = false)
     private String state;
 
+    public UUID getId() {
+        return userId;
+    }
+
+    public void setId(UUID userId) {
+        this.userId = userId;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -68,15 +76,7 @@ public class User {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-
-    public UUID getId() {
-        return userId;
-    }
-
-    public void setId(UUID userId) {
-        this.userId = userId;
-    }
-
+    
     public boolean isLoginCorrect(LoginRequest loginRequest, PasswordEncoder passwordEncoder) {
         return passwordEncoder.matches(loginRequest.password(), this.password);
     }
