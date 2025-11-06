@@ -1,37 +1,62 @@
-# BACKEND
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ------------------------
+# Spring Boot / Java
+# ------------------------
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Compiled class files
+*.class
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# Package files
+*.jar
+*.war
+*.ear
 
-### NetBeans ###
+# Maven / Gradle directories
+/target/
+/build/
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+/out/
+
+# Eclipse
+/.project
+/.classpath
+/.settings/
+/bin/
+
+# NetBeans
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.DS_Store
+
+# Environment / secret files
+.env
+*.keystore
+*.jks
+*.p12
+
+# Node / frontend (se tiver)
+node_modules/
+dist/
+
+# Ignore rsa public and private keys
+src/main/resources/*.key
+src/main/resources/*.pub
+
 
 # FRONTEND
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
