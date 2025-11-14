@@ -76,7 +76,7 @@ public class User {
     public void setUserName(String userName) {
         this.userName = userName;
     }
-    
+
     public boolean isLoginCorrect(LoginRequest loginRequest, PasswordEncoder passwordEncoder) {
         return passwordEncoder.matches(loginRequest.password(), this.password);
     }
